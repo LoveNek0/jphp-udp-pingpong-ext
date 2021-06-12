@@ -8,3 +8,18 @@ deps:
 plugins:
   - Gradle
   - Doc
+
+config:
+  ignore:
+    - /.idea/**
+    - /.gradle/**
+    - /*.iml
+    - /.git/**
+    - /gradle/**
+    - /build/**
+    - /LICENSE
+    - /README.md
+    - /RU-README.md
+    - /EN-README.md
+    - /.gitignore
+    - /.gitattributes
