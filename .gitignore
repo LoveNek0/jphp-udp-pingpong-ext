@@ -1,0 +1,8 @@
+.idea
+.gitattributes
+.gradle
+build
+*.iml
+*.gz
+*.json
+vendor
