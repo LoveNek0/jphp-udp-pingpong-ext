@@ -23,3 +23,5 @@ config:
     - /api-docs/EN-README.md
     - /.gitignore
     - /.gitattributes
+    - /*.json
+    - /*.gz

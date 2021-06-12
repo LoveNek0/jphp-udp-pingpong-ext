@@ -27,7 +27,6 @@ sourceSets { main { compileClasspath += configurations.provided } }
 
 dependencies {
   provided files('jars/UDP-Client-Server.jar')
-  provided files('jars/x-jphp-udp-pingpong-ext-0.9.0.jar')
   provided files('vendor/jphp-runtime/jars/jphp-runtime-1.0.3.jar')
 
 
