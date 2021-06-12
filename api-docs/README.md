@@ -1,5 +1,5 @@
 ## jphp-udp-pingpong-ext
-> version {0}, created by JPPM.
+> version 0.9.0, created by JPPM.
 
 A jPHP extension that implements an API for client-server applications based on a UDP Ping-Pong connection
 
