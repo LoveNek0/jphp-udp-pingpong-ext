@@ -7,11 +7,6 @@ API for applications using a UDP Ping-Pong connection
 jppm add jphp-udp-pingpong-ext@0.9.0
 ```
 
-## Build and add to local repository
-```
-jppm publish
-```
-
 ## Examples
 ### Server
 #### Server creation and launch
