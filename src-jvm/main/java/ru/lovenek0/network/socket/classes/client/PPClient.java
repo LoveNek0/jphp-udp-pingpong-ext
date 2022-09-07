@@ -134,16 +134,6 @@ public class PPClient extends BaseObject {
         client.sendData(data.toString());
     }
 
-    @Reflection.Signature
-    public void setMaxPacketSize(Memory size){
-        client.setPacketSize(size.toInteger());
-    }
-
-    @Reflection.Signature
-    public Memory getMaxPacketSize(){
-        return LongMemory.valueOf(client.getPacketSize());
-    }
-
     @Reflection.Signature({
             @Reflection.Arg(value = "type", type = HintType.INT),
             @Reflection.Arg(value = "runnable", type = HintType.CALLABLE)
@@ -160,6 +150,20 @@ public class PPClient extends BaseObject {
 
         this.callbacks[id] = invoker;
         return Memory.TRUE;
+    }
+
+    public Memory isConnected(){
+        return client.isConnected() ? Memory.TRUE : Memory.FALSE;
+    }
+
+    @Reflection.Signature
+    public void setPacketSize(Memory size){
+        client.setPacketSize(size.toInteger());
+    }
+
+    @Reflection.Signature
+    public Memory getPacketSize(){
+        return LongMemory.valueOf(client.getPacketSize());
     }
 
     @Reflection.Signature

@@ -44,6 +44,18 @@ class UDPServer{
     public function stop(){}
 
     /**
+     * Set packet size
+     * @param int $timeoutMS
+     */
+    public function setPacketSize(int $timeoutMS){}
+
+    /**
+     * Get packet size
+     * @return int
+     */
+    public function getPacketSize(): int{}
+
+    /**
      * Set timeout for clients disconnecting
      * @param int $timeoutMS
      */
@@ -74,11 +86,10 @@ class UDPServer{
     public function getConnections(): array{}
 
     /**
-     * Send packet to connection
-     * @param UDPConnection $connection
-     * @param UDPPacket $packet
+     * Check is async server
+     * @return bool
      */
-    public function sendPacket(UDPConnection $connection, UDPPacket $packet){}
+     public function isAsync() : bool{}
 
     /**
      * Set handlers for events

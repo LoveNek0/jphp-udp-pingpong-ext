@@ -23,6 +23,13 @@ class UDPClient{
     public function __construct(){}
 
     /**
+     * Connect to server
+     * @param string $host
+     * @param int $port
+     */
+    public function connect(string $host, int $port){}
+
+    /**
      * Disconnect from server
      */
     public function disconnect(){}
@@ -34,16 +41,22 @@ class UDPClient{
     public function sendData(string $data){}
 
     /**
+     * Check is client connected to server
+     * @return bool
+     */
+    public function isConnected(): bool{}
+
+    /**
      * Set maximum size of packet
      * @param int $size
      */
-    public function setMaxPacketSize(int $size){}
+    public function setPacketSize(int $size){}
 
     /**
      * Get maximum size of packet
      * @return int
      */
-    public function getMaxPacketSize(): int{}
+    public function getPacketSize(): int{}
 
     /**
      * Set handler for events listener

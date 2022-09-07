@@ -167,6 +167,16 @@ public class PPServer extends BaseObject {
     }
 
     @Reflection.Signature
+    public void setPacketSize(Memory timeoutMS){
+        server.setPacketSize(timeoutMS.toInteger());
+    }
+
+    @Reflection.Signature
+    public Memory getPacketSize(){
+        return LongMemory.valueOf(server.getPacketSize());
+    }
+
+    @Reflection.Signature
     public void setDisconnectTimeout(Memory timeoutMS){
         server.setDisconnectTimeout(timeoutMS.toInteger());
     }
@@ -184,6 +194,11 @@ public class PPServer extends BaseObject {
     @Reflection.Signature
     public Memory getReceiveTimeout(){
         return LongMemory.valueOf(server.getReceiveTimeout());
+    }
+
+    @Reflection.Signature
+    public Memory isAsync(){
+        return server.isAsync() ? Memory.TRUE : Memory.FALSE;
     }
 
     @Reflection.Signature
