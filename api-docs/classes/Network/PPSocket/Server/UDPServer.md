@@ -159,6 +159,6 @@ Check is async server
 
 ### setListener()
 ```php
-setListener(int $type, callable $callback, php\lang\Environment $env): void
+setListener(int $type, callable $callback): void
 ```
 Set handlers for events
