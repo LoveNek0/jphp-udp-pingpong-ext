@@ -197,6 +197,11 @@ public class PPServer extends BaseObject {
     }
 
     @Reflection.Signature
+    public void setAsync(Memory status) {
+        server.setAsync(status.toBoolean());
+    }
+
+    @Reflection.Signature
     public Memory isAsync(){
         return server.isAsync() ? Memory.TRUE : Memory.FALSE;
     }

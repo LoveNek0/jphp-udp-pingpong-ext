@@ -1,7 +1,7 @@
 # UDPConnection
 
-- **class** `UDPConnection` (`Network\UDPSocket\UDPConnection`)
-- **source** `Network/UDPSocket/UDPConnection.php`
+- **class** `UDPConnection` (`Network\PPSocket\Server\UDPConnection`)
+- **source** `Network/PPSocket/Server/UDPConnection.php`
 
 ---
 

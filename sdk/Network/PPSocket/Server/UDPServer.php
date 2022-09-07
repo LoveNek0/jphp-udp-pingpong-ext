@@ -86,6 +86,12 @@ class UDPServer{
     public function getConnections(): array{}
 
     /**
+     * Set async status
+     * @param bool $status
+     */
+    public function setAsync(bool $status){}
+
+    /**
      * Check is async server
      * @return bool
      */

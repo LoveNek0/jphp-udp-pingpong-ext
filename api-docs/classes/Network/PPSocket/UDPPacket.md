@@ -1,7 +1,7 @@
 # UDPPacket
 
-- **class** `UDPPacket` (`Network\UDPSocket\UDPPacket`)
-- **source** `Network/UDPSocket/UDPPacket.php`
+- **class** `UDPPacket` (`Network\PPSocket\UDPPacket`)
+- **source** `Network/PPSocket/UDPPacket.php`
 
 ---
 

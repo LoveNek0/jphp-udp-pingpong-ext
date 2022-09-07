@@ -1,17 +1,19 @@
 # UDPClient
 
-- **class** `UDPClient` (`Network\UDPSocket\UDPClient`)
-- **source** `Network/UDPSocket/UDPClient.php`
+- **class** `UDPClient` (`Network\PPSocket\Client\UDPClient`)
+- **source** `Network/PPSocket/Client/UDPClient.php`
 
 ---
 
 #### Methods
 
 - `->`[`__construct()`](#method-__construct) - _UDPClient constructor._
+- `->`[`connect()`](#method-connect) - _Connect to server_
 - `->`[`disconnect()`](#method-disconnect) - _Disconnect from server_
 - `->`[`sendData()`](#method-senddata) - _Send data to server_
-- `->`[`setMaxPacketSize()`](#method-setmaxpacketsize) - _Set maximum size of packet_
-- `->`[`getMaxPacketSize()`](#method-getmaxpacketsize) - _Get maximum size of packet_
+- `->`[`isConnected()`](#method-isconnected) - _Check is client connected to server_
+- `->`[`setPacketSize()`](#method-setpacketsize) - _Set maximum size of packet_
+- `->`[`getPacketSize()`](#method-getpacketsize) - _Get maximum size of packet_
 - `->`[`setListener()`](#method-setlistener) - _Set handler for events listener_
 - `->`[`setDisconnectTimeout()`](#method-setdisconnecttimeout) - _Set timeout for disconnecting_
 - `->`[`getDisconnectTimeout()`](#method-getdisconnecttimeout) - _Get timeout for disconnecting_
@@ -30,6 +32,16 @@
 __construct(): void
 ```
 UDPClient constructor.
+
+---
+
+<a name="method-connect"></a>
+
+### connect()
+```php
+connect(string $host, int $port): void
+```
+Connect to server
 
 ---
 
@@ -53,21 +65,31 @@ Send data to server
 
 ---
 
-<a name="method-setmaxpacketsize"></a>
+<a name="method-isconnected"></a>
 
-### setMaxPacketSize()
+### isConnected()
 ```php
-setMaxPacketSize(int $size): void
+isConnected(): bool
+```
+Check is client connected to server
+
+---
+
+<a name="method-setpacketsize"></a>
+
+### setPacketSize()
+```php
+setPacketSize(int $size): void
 ```
 Set maximum size of packet
 
 ---
 
-<a name="method-getmaxpacketsize"></a>
+<a name="method-getpacketsize"></a>
 
-### getMaxPacketSize()
+### getPacketSize()
 ```php
-getMaxPacketSize(): int
+getPacketSize(): int
 ```
 Get maximum size of packet
 
@@ -77,7 +99,7 @@ Get maximum size of packet
 
 ### setListener()
 ```php
-setListener(int $type, callable $callback, php\lang\Environment $env): void
+setListener(int $type, callable $callback): void
 ```
 Set handler for events listener
 

@@ -7,10 +7,24 @@ A jPHP extension that implements an API for client-server applications based on 
 jppm add jphp-udp-pingpong-ext@git+https://github.com/LoveNek0/jphp-udp-pingpong-ext
 ```
 
+## Examples
+- [**Russian**](examples/RU-README.md)
+- [**English**](examples/EN-README.md)
 
-## Docs
-- [**Russian**](api-docs/RU-README.md)
-- [**English**](api-docs/EN-README.md)
+### API
+**Classes**
+
+#### `Network\PPSocket`
+- [`UDPPacket`](classes/Network/PPSocket/UDPPacket.md)
+
+#### `Network\PPSocket\Client`
+- [`UDPClient`](classes/Network/PPSocket/Client/UDPClient.md)
+
+#### `Network\PPSocket\Server`
+- [`UDPConnection`](classes/Network/PPSocket/Server/UDPConnection.md)
+- [`UDPServer`](classes/Network/PPSocket/Server/UDPServer.md)
+
+
 
 ## Other
 Author: [LoveNek0](https://github.com/LoveNek0)
