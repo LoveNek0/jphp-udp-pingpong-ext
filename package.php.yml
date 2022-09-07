@@ -23,19 +23,13 @@ config:
   ignore:
     - /.idea/**
     - /.gradle/**
-    - /*.iml
-    - /.git/**
-    - /gradle/**
     - /build/**
-    - /LICENSE
-    - /README.md
-    - /api-docs/RU-README.md
-    - /api-docs/EN-README.md
-    - /.gitignore
-    - /.gitattributes
-    - /*.json
-    - /*.gz
-    - /package.hub.yml
-    - /.gitignore
+    - /gradle/**
     - /src-bundle/**
-    - /bundle/**
+    - /src-jvm/**
+    - /src-vendor/**
+    - /.gitignore
+    - /build.gradle
+    - /gradlew
+    - /gradlew.bat
+    - /package-lock.php.yml
