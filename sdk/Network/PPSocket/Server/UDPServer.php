@@ -34,9 +34,14 @@ class UDPServer{
     public function bind(string $host, int $memory){}
 
     /**
-     * Run server
+     * Start server
      */
-    public function run(){}
+    public function start(){}
+	
+    /**
+     * Stop server
+     */
+    public function stop(){}
 
     /**
      * Set timeout for clients disconnecting
