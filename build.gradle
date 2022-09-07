@@ -2,7 +2,7 @@ apply plugin: "java"
 apply plugin: "idea"
 apply plugin: "eclipse"
 
-version '0.9.0'
+version '1'
 
 compileJava {
     sourceCompatibility = '1.8'
@@ -27,6 +27,7 @@ sourceSets { main { compileClasspath += configurations.provided } }
 
 dependencies {
   provided files('jars/UDP-Client-Server.jar')
+  provided files('jars/x-jphp-udp-pingpong-ext-1.jar')
   provided files('vendor/jphp-runtime/jars/jphp-runtime-1.0.3.jar')
 
 

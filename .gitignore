@@ -1,9 +1,9 @@
-.idea
-.gitattributes
 .gradle
-build
-*.iml
-*.gz
-*.json
+.idea
+gradle
 vendor
-jars/x-jphp-udp-pingpong-ext-0.9.0.jar
+build.gradle
+gradlew
+gradlew.bat
+package-lock.php.yml
+package.hub.yml

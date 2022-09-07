@@ -1,11 +1,21 @@
 name: jphp-udp-pingpong-ext
-version: 0.9.0
+version: 1.0
 description: A jPHP extension that implements an API for client-server applications based on a UDP Ping-Pong connection
+
+develnext-bundle:
+  version: 1.0
+  name: UDP Ping-Pong Socket
+  author: lovenek0
+  icon: "develnext/bundle/udppingpong/icon.png"
+  description: "Extension that implements ad API for client-server applications based on a UDP Ping-Pong connection"
+  group: "network"
+  class: "develnext\\bundle\\udppingpong\\UDPPingPongBundle"
 
 deps:
   jphp-runtime: "*"
 
 plugins:
+  - Hub
   - Gradle
   - Doc
 
@@ -25,3 +35,7 @@ config:
     - /.gitattributes
     - /*.json
     - /*.gz
+    - /package.hub.yml
+    - /.gitignore
+    - /src-bundle/**
+    - /bundle/**
