@@ -15,14 +15,14 @@ jppm add jphp-udp-pingpong-ext@git+https://github.com/LoveNek0/jphp-udp-pingpong
 **Classes**
 
 #### `Network\PPSocket`
-- [`UDPPacket`](classes/Network/PPSocket/UDPPacket.md)
+- [`UDPPacket`](api-docs/classes/Network/PPSocket/UDPPacket.md)
 
 #### `Network\PPSocket\Client`
-- [`UDPClient`](classes/Network/PPSocket/Client/UDPClient.md)
+- [`UDPClient`](api-docs/classes/Network/PPSocket/Client/UDPClient.md)
 
 #### `Network\PPSocket\Server`
-- [`UDPConnection`](classes/Network/PPSocket/Server/UDPConnection.md)
-- [`UDPServer`](classes/Network/PPSocket/Server/UDPServer.md)
+- [`UDPConnection`](api-docs/classes/Network/PPSocket/Server/UDPConnection.md)
+- [`UDPServer`](api-docs/classes/Network/PPSocket/Server/UDPServer.md)
 
 
 
